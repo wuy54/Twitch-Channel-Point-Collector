@@ -1,0 +1,17 @@
+
+{
+  "name": "Twitch Channel Points Collector",
+  "description": "Click Twitch Channel Points Button Automatically. \nCan be turned off.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.twitch.tv/*"
+  ]
+}
